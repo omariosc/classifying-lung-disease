@@ -8,10 +8,11 @@ In this guide, we will walk you through the process of training your own AI mode
 
 ## Step 1: Download This Repository
 
-To get started, download this repository. You can do this by clicking on the green `"Code"` button and selecting `"Download ZIP"`. Once downloaded, extract the contents of the ZIP file to a folder on your computer.
-You should see the following folder structure:
+To get started, download this repository. You can do this by clicking on the green `"Code"` button and selecting `"Download ZIP"`.
 
 ![Download Repo](tutorial/0.%20Download%20Repo.png)
+
+Once downloaded, extract the contents of the ZIP file to a folder on your computer. You should see the following folder structure if you explore each folder:
 
 ```sh
 |-- Exported Model
