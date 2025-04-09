@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Your Own AI Model</title>
+    <style>
+      body {
+        max-width: 800px;
+        margin: auto;
+        padding: 2rem;
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        line-height: 1.6;
+        color: #212529;
+      }
+      h1, h2 {
+        color: #343a40;
+      }
+      pre, code {
+        background-color: #e9ecef;
+        padding: 0.5rem;
+        border-radius: 4px;
+        overflow-x: auto;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 1rem 0;
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Training Your Own AI Model</h1>
+    </header>
+    <main>
+      <p>This guide will walk you through the process of training your own AI model using <a href="https://teachablemachine.withgoogle.com/" target="_blank">Teachable Machine</a>. This user‐friendly platform allows you to create machine learning models without any coding experience.</p>
+      
+      <h2>Step 1: Download This Repository</h2>
+      <p>To get started, download this repository by clicking the green <strong>"Code"</strong> button and selecting <strong>"Download ZIP"</strong>. Once downloaded, extract the contents of the ZIP file. Your folder structure should resemble the following:</p>
+      <pre>
+|-- Exported Model
+│   ├── keras_model.h5
+│   ├── labels.txt
+├── README.md
+├── TEST
+│   ├── healthy
+│   │   ├── ...
+│   ├── disease
+│   │   ├── ...
+├── TRAIN
+│   ├── healthy
+│   │   ├── ...
+│   ├── disease
+│   │   ├── ...
+├── tutorial
+│   ├── ...
+      </pre>
+      <p>The <strong>README.md</strong> file contains this tutorial and the <strong>tutorial</strong> folder holds the images that will assist you.</p>
+      <img src="tutorial/0.%20Download%20Repo.png" alt="Download Repo">
+      
+      <h2>Step 2: Get Started with Teachable Machine</h2>
+      <p>Visit the <a href="https://teachablemachine.withgoogle.com/" target="_blank">Teachable Machine website</a> and click on <strong>"Get Started"</strong>.</p>
+      <img src="tutorial/1.%20Get%20Started.png" alt="Get Started">
+      <p>Select the <strong>"Image Project"</strong> option, then choose <strong>"Standard Image Model"</strong> to create an image classification model.</p>
+      <img src="tutorial/2.%20New%20Project.png" alt="New Project">
+      <img src="tutorial/3.%20Model.png" alt="Model">
+      
+      <h2>Step 3: Add Your Data</h2>
+      <p>Rename your classes to <strong>"Healthy"</strong> and <strong>"Diseased"</strong> by clicking on the default text. Then, upload all the images from the repository (located in the <code>healthy</code> and <code>disease</code> folders within the <strong>TRAIN</strong> directory). Please note that if you are uploading many images, it may take some time.</p>
+      <img src="tutorial/4.%20Rename%20Classes.png" alt="Rename Classes">
+      <img src="tutorial/5.%20Add%20Images.png" alt="Add Images">
+      <p>Optionally, click on <strong>"Advanced"</strong> to adjust the training parameters.</p>
+      <img src="tutorial/6.%20Training%20Parameters.png" alt="Training Parameters">
+      <p>Once all images are uploaded, click the <strong>"Train Model"</strong> button. It is advisable not to change tabs during this process.</p>
+      
+      <h2>Step 4: Test Your Model</h2>
+      <p>After training, you can dismiss the camera prompt, switch the input mode to <strong>"File"</strong>, and test your model using the images in the <strong>TEST</strong> folder.</p>
+      <img src="tutorial/7.%20Test%20Your%20Model.png" alt="Test Your Model">
+      
+      <h2>Step 5: Stretch Exercises</h2>
+      <ol>
+        <li>Try testing your model using the images in the <strong>Extension</strong> folder, which include samples for “bronchitis”, “cancer”, “cartoon”, “child” and “inverted” lungs, or use images from online sources.</li>
+        <li>Use the exported model in either JavaScript or Python to validate all the images in the <strong>TEST</strong> folder from the full dataset available on <a href="https://www.kaggle.com/datasets/obulisainaren/multi-cancer" target="_blank">Kaggle</a>. Research how a <a href="https://en.wikipedia.org/wiki/Confusion_matrix" target="_blank">confusion matrix</a> can be interpreted.</li>
+      </ol>
+      
+      <h2>Conclusion</h2>
+      <p>Congratulations! You have successfully trained your own AI model to classify pneumonia in x‐ray images of lungs using Teachable Machine.</p>
+      
+      <h2>Export Model (Optional)</h2>
+      <p>If you wish to explore further, you can export your trained model and integrate it with JavaScript or Python. A sample exported model is available in the <strong>Exported Model</strong> folder for guidance.</p>
+      <img src="tutorial/8.%20Exporting%20Your%20Model.png" alt="Exporting Your Model">
+      
+    </main>
+  </body>
+</html>
