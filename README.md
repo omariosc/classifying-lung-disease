@@ -78,9 +78,11 @@ After training, you can decline using the camera, and change the `"Input"` mode 
 
 ![Exporting Your Model](tutorial/8.%20Exporting%20Your%20Model.png)
 
-## Step 5: Stretch Exercise
+## Step 5: Stretch Exercises
 
-Could you try and use the exported model in either JavaScript or Python to validate all the images in the `"test"` folder from the full dataset [here](https://www.kaggle.com/datasets/obulisainaren/multi-cancer)? Look into what a [confuion matrix](https://en.wikipedia.org/wiki/Confusion_matrix) is and how we can interpet it.
+1. Try and test your model with the images in the `"Extension"` folder. You have sample images for `"bronchitis"`, `"cancer"`, `"cartoon"`, `"child"`, and `"inverted"` lungs. You can also try and test your model with images from the internet. You can use [Google Images](https://www.google.com/imghp) to search for images of `"healthy lungs"` and `"disease lungs"`. What about other scans of different organs?
+
+2. Could you try and use the exported model in either JavaScript or Python to validate all the images in the `"test"` folder from the full dataset [here](https://www.kaggle.com/datasets/obulisainaren/multi-cancer)? Look into what a [confuion matrix](https://en.wikipedia.org/wiki/Confusion_matrix) is and how we can interpet it.
 
 ## Conclusion
 
