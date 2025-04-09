@@ -1,5 +1,7 @@
 # Training Your Own AI Model
 
+**_See this tutorial on the website [here](https://omariosc.github.io/classifying-lung-disease/)._**
+
 In this guide, we will walk you through the process of training your own AI model using [Teachable Machine](https://teachablemachine.withgoogle.com/). This is a user-friendly platform that allows you to create machine learning models without any coding experience. We will cover the following steps:
 
 1. **Collecting Data**: Gather the data you need for training your model.
